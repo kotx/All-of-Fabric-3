@@ -38,3 +38,5 @@ minecraft/chooser_0.png
 mods/
 .DS_Store
 .minecraft/serversync-3.6.0.jar
+.minecraft/.fabric/remappedJars/minecraft-1.16.2/intermediary-minecraft-1.16.2-client.jar
+.minecraft/logs/serversync-client.log
