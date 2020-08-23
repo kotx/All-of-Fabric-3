@@ -33,14 +33,14 @@
 	// Change sort modes. Existing sort modes are ALPHABET, RAW_ID and QUANTITY
 	sort: {
 		// Sets the sort mode for normal sorting.
-		// default: RAW_ID
-		primary-sort: NONE
+		// default: raw_id
+		primary-sort: raw_id
 		// Sets the sort mode for sorting whilst pressing shift.
-		// default: QUANTITY
-		shift-sort: QUANTITY
+		// default: quantity
+		shift-sort: quantity
 		// Sets the sort mode for sorting whilst pressing control.
-		// default: ALPHABET
-		control-sort: ALPHABET
+		// default: alphabet
+		control-sort: alphabet
 	}
 	// Configure refill related stuff here.
 	refill: {

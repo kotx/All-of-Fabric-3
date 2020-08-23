@@ -1,35 +1,475 @@
-[11:49:59] [main/INFO]: Loading for game Minecraft 1.16.2
-[11:49:59] [main/INFO]: Fabric is preparing JARs on first launch, this may take a few seconds...
-[11:50:14] [main/FATAL]: A critical error occurred
-net.fabricmc.loader.discovery.ModResolutionException: Mod resolution failed!
-	at net.fabricmc.loader.discovery.ModResolver.resolve(ModResolver.java:600) ~[fabric-loader-0.9.2+build.206.jar:?]
-	at net.fabricmc.loader.FabricLoader.setup(FabricLoader.java:202) ~[fabric-loader-0.9.2+build.206.jar:?]
-	at net.fabricmc.loader.FabricLoader.load(FabricLoader.java:192) [fabric-loader-0.9.2+build.206.jar:?]
-	at net.fabricmc.loader.launch.knot.Knot.init(Knot.java:127) [fabric-loader-0.9.2+build.206.jar:?]
-	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:26) [fabric-loader-0.9.2+build.206.jar:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
-	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:196) [NewLaunch.jar:?]
-	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:231) [NewLaunch.jar:?]
-	at org.multimc.EntryPoint.listen(EntryPoint.java:143) [NewLaunch.jar:?]
-	at org.multimc.EntryPoint.main(EntryPoint.java:34) [NewLaunch.jar:?]
-Caused by: java.lang.RuntimeException: java.lang.RuntimeException: Failed to open mod JAR at /Applications/MultiMC.app/Contents/MacOS/instances/All-of-Fabric-3/.minecraft/mods/Mambience-2.1.0+1.16.2.jar!
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
-	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
-	at java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[?:?]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinTask.getThrowableException(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinTask.getException(Unknown Source) ~[?:?]
-	at net.fabricmc.loader.discovery.ModResolver.resolve(ModResolver.java:583) ~[fabric-loader-0.9.2+build.206.jar:?]
-	... 12 more
-Caused by: java.lang.RuntimeException: Failed to open mod JAR at /Applications/MultiMC.app/Contents/MacOS/instances/All-of-Fabric-3/.minecraft/mods/Mambience-2.1.0+1.16.2.jar!
-	at net.fabricmc.loader.discovery.ModResolver$UrlProcessAction.compute(ModResolver.java:456) ~[fabric-loader-0.9.2+build.206.jar:?]
-	at java.util.concurrent.RecursiveAction.exec(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinPool.scan(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) ~[?:?]
-	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) ~[?:?]
+[14:22:12] [main/INFO]: Loading for game Minecraft 1.16.2
+[14:22:14] [main/WARN]: Warnings were found! 
+ - Conflicting versions found for fabric-api-base: used 0.1.3+12a8474cfa, also found 0.1.3+12a8474c4e, 0.1.3+12a8474cb2, 0.1.3+12a8474ca7
+ - Conflicting versions found for fabric-networking-v0: used 0.1.10+e00ecb5f4e, also found 0.1.10+e00ecb5fa7
+ - Conflicting versions found for fabric-key-binding-api-v1: used 1.0.1+730711c64e, also found 1.0.1+730711c6a7
+ - Conflicting versions found for fabric-lifecycle-events-v1: used 1.2.0+74cc3b204e, also found 1.2.0+74cc3b20a7
+ - Conflicting versions found for fabric-events-lifecycle-v0: used 0.2.0+16acbe5b4e, also found 0.2.0+16acbe5ba7
+ - Conflicting versions found for libcd: used 2.5.0+1.16.2, also found 2.5.0+1.16.1
+ - Mod crookedcrooks recommends mod {adabraniummod @ [*]}, which is missing!
+[14:22:14] [main/WARN]: Mod `vanillaexcavators` (1.1.0) uses 'requires' key in fabric.mod.json, which is not supported - use 'depends'
+[14:22:14] [main/WARN]: Mod `harvest` (1.2.12) uses 'requires' key in fabric.mod.json, which is not supported - use 'depends'
+[14:22:14] [main/WARN]: Mod `tweed` (3.0.0-beta.13) uses 'requires' key in fabric.mod.json, which is not supported - use 'depends'
+[14:22:14] [main/WARN]: Mod `soulbound` (1.0.1) uses 'requires' key in fabric.mod.json, which is not supported - use 'depends'
+[14:22:14] [main/WARN]: Mod `lightoverlay` (5.5.1) uses 'requires' key in fabric.mod.json, which is not supported - use 'depends'
+[14:22:14] [main/WARN]: Mod `simplevoidworld` (4.0.0) uses 'requires' key in fabric.mod.json, which is not supported - use 'depends'
+[14:22:14] [main/INFO]: [FabricLoader] Loading 227 mods: fermion@2.1.191, roughlyenoughitems-api@5.2.7, crusade@1.1.2, couplings@1.3.1, kubejs@1.3.1, cloth-common-events-v1@1.4.2, ezpas@1.2.1-1.16.2, step-height-entity-attribute@1.0.0, fabricloader@0.9.2+build.206, trinkets@2.6.4, cloth-durability-bar-api-v1@1.4.2, iron-jetpacks@0.2.5, kibe@1.2-BETA, fabric-game-rule-api-v1@1.0.1+91555cd14e, fermion-modkeys@1.8.180-snapshot, fabric-api-base@0.1.3+12a8474cfa, cotton-cauldron@1.0.4, maybe-data@1.0.0-1.16.2, packages@1.1, astromine@1.7.0, ce_foodstuffs@1.0, playerabilitylib@1.2.1, waila@1.9.22, villagerhats@fabric-1.16-rc1-1.0.0, astromine-foundations@1.7.0, org_jetbrains_kotlin_kotlin-stdlib-jdk7@1.3.72, bunch-o-trinkets@1.0.1, fabric-diagonal-panes@0.3.0, fabric-networking-v0@0.1.10+e00ecb5f4e, pling@1.2.0, org_codehaus_groovy_groovy@3.0.3, techreborn@3.5.1+build.101, cleancut@mc1.16-2.1-fabric, lapisreserve@1.0.6, tk_valoeghese_zoesteriaconfig@1.3.2, repurposed_structures@1.5.1, modmenu@1.14.6+build.31, flora-doubling@1.1.2, phosphor@0.6.0+build.7, sbinnery@12.1, cloth-utils-v1@1.4.2, org_jetbrains_kotlin_kotlin-stdlib-jdk8@1.3.72, roughlyenoughitems-runtime@5.2.7, rtree-3i-lite-fabric@0.3.0, structure-helpers@3.0.0, bebooks@1.1.1, fabric-crash-report-info-v1@0.1.2+b7f9825d4e, loadcatcher@2.0.0, fabric-key-binding-api-v1@1.0.1+730711c64e, chunkpregen@0.2.2, trapexpansion@1.3.2, compactstatuseffects@1.2.1, staticdata@1.1.2, libblockattributes_fluids@0.8.0-pre.19, magna@1.4.0-1.16.2, adorn@1.11.0+1.16.2, cotton-player-events@1.0.2, org_jetbrains_annotations@19.0.0, parchment@1.0.2+1.15.2, linkedstorage@1.3.7-1.16, mambience@2.1.0+1.16.2, org_jetbrains_kotlinx_kotlinx-coroutines-core@1.3.7, vanillaexcavators@1.1.0, fabric-structure-api-v1@1.0.0+516ece7c4e, fabric-object-builder-api-v1@1.6.0+e81ec80b4e, ringsofascension@1.0.7, hardcorequesting@0.2.2, fabric-rendering-data-attachment-v1@0.1.3+b7f9825d4e, wolveswitharmor@1.5.2-1.16.2, linkart@unspecified, reach-entity-attributes@1.0.1, fabric-lifecycle-events-v1@1.2.0+74cc3b204e, cardinal-components-util@2.5.0, fabric-loot-tables-v1@1.0.0+fac8f3664e, cloth-armor-api-v1@1.4.2, dynamicfps@1.2.1, goml@1.1.0, libblockattributes_core@0.8.0-pre.19, bambootweaks@unspecified, minecraft@1.16.2, compressedblocks@1.0, boringbackgrounds@2.1.0-1.16.pre3, ktdatataglib@1.4.0, xpstorage@0.2, jankson@3.0.1+j1.2.0, fabric-command-api-v1@1.0.8+5ce533984e, cotton-commons@1.0.4, fabric-renderer-indigo@0.3.4+5d32f5834e, advancements-enlarger@0.2.2, shapes@2.0.0+build.10, libgui@3.0.0-beta.1+1.16.2-rc2, cardinal-components@2.5.0, slight-gui-modifications@1.3.0, xaerominimap@20.20.1, fabric-rendering-v0@1.1.0+534104904e, fabric-rendering-v1@1.2.0+fc24ff244e, packed@1.0.6, givemehats@1.2.8, winged@1.16.2-1.3.2, autoconfig1u@3.2.0-unstable, harvest@1.2.12, fabric-tag-extensions-v0@1.0.3+ac8e8c594e, blue_endless_jankson@+, appleskin@1.0.11, can-i-mine-this-block@1.0.2, cloth-api@1.4.2, byg@1.0.2, cloth-datagen-api-v1@1.4.2, fabric-events-lifecycle-v0@0.2.0+16acbe5b4e, horseinfo@0.2.2-1.16.1, team_reborn_energy@0.1.0, tweed@3.0.0-beta.13, fabric-keybindings-v0@0.2.0+3fa9f7c54e, notenoughcrashes@2.1.4+1.16.1, artifice@0.13.1+1.16.2-rc1, stonecutter-tweaks@1.1.0-1.16, indrev@1.5.1-BETA, healthoverlay@3.6.12, soulbound@1.0.1, staffofbuilding@1.2.2-1.16.2, glassential@1.16.1-1.1.4, reborncore@4.4.0+build.67, xaeroworldmap@1.10.1, controlling@1.1.2, dankstorage@1.5-1.16.2, jumpoverfences@1.16-0.0.3, diggusmaximus@1.3.1-1.16, fiber@0.23.0-1, roughlyenoughresources@2.1.0, cardinal-components-level@2.5.0, org_jetbrains_kotlin_kotlin-stdlib@1.3.72, com_moandjiezana_toml_toml4j@0.7.2, fabric-blockrenderlayer-v1@1.1.4+c6a8ea894e, libblockattributes_items@0.8.0-pre.19, cardinal-components-scoreboard@2.5.0, fabric@0.19.0+build.398-1.16, gameinfo@1.5.4 1.16.2, respawnablepets@6, dml-refabricated@0.3.0-alpha4, tis3d@1.5.0, cotton-config@1.0.0-rc.7, wrenchable@1.0.0+1.16.1, fabric-screen-handler-api-v1@1.1.0+872498414e, improved-stations@2.0.3, eggtab@1.3.0+1.16-fabric, tacocraft@1.3.1+mc.1.16, fabric-tool-attribute-api-v1@1.2.2+ccce563e4e, angerable-patch@1.0.0-1.16.1, cloth-client-events-v0@1.4.2, blockus@1.6.3.1, fabric-events-interaction-v0@0.4.0+e2e6cdad4e, fabric-language-kotlin@1.3.72+build.1, patchouli@1.16-40-FABRIC, mousewheelie@1.5.3+mc1.16.2-pre1, cloth-config2@4.7.0-unstable, org_jetbrains_kotlinx_kotlinx-coroutines-jdk8@1.3.7, hard-hat-steve@1.1.1, fabric-resource-loader-v0@0.2.9+e5d3217f4e, endreborn@1.8, chainmail@0.5.0, org_jetbrains_kotlin_kotlin-reflect@1.3.72, expandedstorage@5.5.22, cardinal-components-entity@2.5.0, fabric-registry-sync-v0@0.4.3+e5d3217f4e, fabric-commands-v0@0.2.0+52d308364e, cherishedworlds@1.1.0-1.16.2, cardinal-components-base@2.5.0, lightoverlay@5.5.1, fabric-mining-levels-v0@0.1.2+b764ce994e, fabric-item-groups-v0@0.2.0+438f96364e, fabric-models-v0@0.1.0+dfdb52d64e, shulkerboxtooltip@2.1.1-beta.1+1.16.2-rc2, craftpresence@1.6.8, fabric-renderer-api-v1@0.2.13+eae12eb84e, inventorysorter@1.7.2-1.16, cardinal-components-block@2.5.0, libcd@2.5.0+1.16.2, flesh2leather@1.0.0, cotton@1.0.5, vanilla-hammers@2.0.6-1.16.2, simplevoidworld@4.0.0, allure@1.2.4, simpleteleporters@2.2.1, blade@1.0.1, crawl@0.7.2, fabric-containers-v0@0.1.8+045df74f4e, appliedenergistics2@8.1.0-alpha.3, mm@2.1, cloth-dynamic-registry-api-v1@1.4.2, campanion@1.1.13+build.35, fabric-textures-v0@1.0.4+eae12eb84e, cardinal-components-item@2.5.0, fabric-rendering-fluids-v1@0.1.10+e5d3217f4e, bedspreads@1.1.0-1.16.2, cloth-scissors-api-v1@1.4.2, cotton-logging@1.0.0-rc.4, glassdoor@1.4.4-1.16, cardinal-components-chunk@2.5.0, fabric-renderer-registries-v1@2.1.0+e2862de64e, quickshulker@1.1.6-1.16, fabric-particles-v1@0.2.1+0a6f2a704e, slotlink@1.1.6+minecraft-1.16.2, roughlyenoughitems-default-plugin@5.2.7, fabric-networking-blockentity-v0@0.2.5+b50ffc7b4e, crookedcrooks@1.2.1+1.16.1, cloth-basic-math@0.5.1, fatxporbs@0.0.7, static-content@1.0.1-1.16.2, amecsapi@1.0.2+mc1.16-rc1, spinnery@3.1.13, roughlyenoughitems@5.2.7, fabric-item-api-v1@1.1.0+29679fd64e, cotton-datapack@1.0.5, kyrptconfig@1.1.2-1.16, reddragonapi@1.0.0, marvelousmachines@1.0.1-beta-mc1.16.1, iknowwhatimdoing@3.0.0, slabhelper@1.3.3, fabric-content-registries-v0@0.1.9+059ea8664e, cardinal-components-world@2.5.0, bettergraves@0.3.0, fabric-furnaces@1.3.1-1.16.1, libstructure@1.5, org_codehaus_groovy_groovy-jsr223@3.0.3, astromine-core@1.7.0, fabric-object-builders-v0@0.6.1+ba4afa574e, secretrooms@0.9.2+1.16.2
+[14:22:14] [main/WARN]: Mod `villagerhats` (fabric-1.16-rc1-1.0.0) does not respect SemVer - comparison support is limited.
+[14:22:14] [main/WARN]: Mod `cleancut` (mc1.16-2.1-fabric) does not respect SemVer - comparison support is limited.
+[14:22:14] [main/WARN]: Mod `linkart` (unspecified) does not respect SemVer - comparison support is limited.
+[14:22:14] [main/WARN]: Mod `bambootweaks` (unspecified) does not respect SemVer - comparison support is limited.
+[14:22:14] [main/WARN]: Mod `blue_endless_jankson` (+) does not respect SemVer - comparison support is limited.
+[14:22:14] [main/WARN]: Mod `gameinfo` (1.5.4 1.16.2) does not respect SemVer - comparison support is limited.
+[14:22:14] [main/WARN]: Mod `blockus` (1.6.3.1) uses more dot-separated version components than SemVer allows; support for this is currently not guaranteed.
+[14:22:15] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.1 Source=file:/Applications/MultiMC.app/Contents/MacOS/libraries/net/fabricmc/sponge-mixin/0.8.1+build.21/sponge-mixin-0.8.1+build.21.jar Service=Knot/Fabric Env=CLIENT
+[14:22:16] [main/WARN]: Reference map 'give-me-hats-1.16-refmap.json' for givemehats.mixins.json could not be read. If this is a development environment you can ignore this message
+[14:22:16] [main/WARN]: Reference map 'mixins/iknowwhatimdoing/refmap.json' for mixins/iknowwhatimdoing/mixins.json could not be read. If this is a development environment you can ignore this message
+[14:22:16] [main/WARN]: Reference map 'static-content-refmap.json' for static-content.mixins.json could not be read. If this is a development environment you can ignore this message
+[14:22:16] [main/WARN]: Reference map 'ezpas-refmap.json' for ezpas.mixins.json could not be read. If this is a development environment you can ignore this message
+[14:22:16] [main/WARN]: Reference map 'fabric-diagonal-panes-refmap.json' for fabric-diagonal-panes.mixins.json could not be read. If this is a development environment you can ignore this message
+[14:22:16] [main/WARN]: Reference map 'blade-1.0.1+fabric-1.16.1-refmap.json' for blade.mixins.json could not be read. If this is a development environment you can ignore this message
+[14:22:16] [main/WARN]: Reference map 'xpstorage-refmap.json' for xpstorage.mixins.json could not be read. If this is a development environment you can ignore this message
+[14:22:16] [main/WARN]: Reference map 'wrenchable-refmap.json' for wrenchable.mixins.json could not be read. If this is a development environment you can ignore this message
+[14:22:16] [main/WARN]: Reference map 'fabric-chunkpregen-refmap.json' for chunkpregen.mixins.json could not be read. If this is a development environment you can ignore this message
+[14:22:17] [main/WARN]: Error loading class: net/minecraft/client/MinecraftClient (java.lang.ClassNotFoundException: net/minecraft/client/MinecraftClient)
+[14:22:17] [main/WARN]: @Mixin target net.minecraft.client.MinecraftClient was not found mixins/iknowwhatimdoing/mixins.json:IKnowWhatImDoing
+[14:22:21] [main/WARN]: Method overwrite conflict for method_20813 in dynamicfps.mixins.json:ThreadExecutorMixin, previously written by com.github.chainmailstudios.astromine.mixin.ThreadExecutorMixin. Skipping method.
+[14:22:39] [main/INFO]: Read Biome Weight Config!
+[14:22:43] [main/INFO]: BYG: Items registered!
+[14:22:45] [main/INFO]: BYG: Registered Sub Biomes!
+[14:22:45] [main/INFO]: BYG: Registered Biomes!
+[14:22:45] [main/INFO]: BYG: Registered Nether Biomes!
+[14:22:45] [main/INFO]: BYG: Registered End Biomes!
+[14:22:45] [main/INFO]: Adding Numerical Biome ID's
+[14:22:45] [main/INFO]: Added Numerical Biome ID's!
+[14:22:50] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', name='PROD'
+[14:22:50] [main/INFO]: Setting user: The_Monster_Zer0
+[14:22:50] [main/INFO]: [Entrypoint Catcher] Running Mod Entrypoints Normally
+[14:22:50] [main/INFO]: [Entrypoint Catcher] Found 116 common entrypoints and 94 client entrypoints
+[14:22:50] [main/INFO]: [Entrypoint Catcher] Running Entrypoints
+[14:22:50] [main/INFO]: Initialized entrypoint KubeJSOtherEventHandler!
+[14:22:50] [main/INFO]: Initialized entrypoint KubeJSWorldEventHandler!
+[14:22:50] [main/INFO]: Initialized entrypoint KubeJSPlayerEventHandler!
+[14:22:50] [main/INFO]: Initialized entrypoint KubeJSEntityEventHandler!
+[14:22:50] [main/INFO]: Initialized entrypoint KubeJSBlockEventHandler!
+[14:22:50] [main/INFO]: Initialized entrypoint KubeJSItemEventHandler!
+[14:22:50] [main/INFO]: Initialized entrypoint KubeJSRecipeEventHandler!
+[14:22:50] [main/INFO]: Initialized entrypoint KubeJSFluidEventHandler!
+[14:22:50] [main/INFO]: Initialized entrypoint AstromineRecipeEventHandler!
+[14:22:50] [main/INFO]: Initialized entrypoint TechRebornRecipeEventHandler!
+[14:22:50] [main/INFO]: [STDOUT]: Babel Transformer done in 8.792 ms
+[14:22:51] [main/INFO]: [STDERR]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[14:22:52] [main/INFO]: Hello, World! (You will only see this line once in console, during startup)
+[14:22:52] [main/INFO]: Loaded script startup:example.js
+[14:22:52] [main/INFO]: Loaded 1/1 KubeJS startup scripts in 1.265 s
+[14:23:00] [main/INFO]: [STDOUT]: DEUS VULT!
+[14:23:01] [main/INFO]: Discovered plugin waila:core provided by waila at mcp.mobius.waila.addons.core.PluginCore
+[14:23:01] [main/INFO]: Discovered plugin waila:vanilla provided by waila at mcp.mobius.waila.addons.minecraft.PluginMinecraft
+[14:23:01] [main/INFO]: Discovered plugin cimtb:cimtb_plugin provided by can-i-mine-this-block at me.shedaniel.cimtb.CimtbWailaPlugin
+[14:23:01] [main/INFO]: Discovered plugin horseinfo provided by horseinfo at net.pancham138.horseinfo.HorseInfo
+[14:23:01] [main/INFO]: Discovered plugin appliedenergistics2:hwyla provided by appliedenergistics2 at appeng.integration.modules.waila.WailaModule
+[14:23:01] [main/INFO]: Registering plugin at mcp.mobius.waila.addons.core.PluginCore
+[14:23:01] [main/INFO]: Registering plugin at appeng.integration.modules.waila.WailaModule
+[14:23:01] [main/INFO]: Registering plugin at mcp.mobius.waila.addons.minecraft.PluginMinecraft
+[14:23:01] [main/INFO]: Registering plugin at me.shedaniel.cimtb.CimtbWailaPlugin
+[14:23:01] [main/INFO]: Registering plugin at net.pancham138.horseinfo.HorseInfo
+[14:23:01] [main/INFO]: [Hwyla Addon Horse Info] Registering 
+[14:23:16] [main/INFO]: Loaded torus size map in 4913ms
+[14:23:16] [main/INFO]: TechReborn setup done!
+[14:23:21] [main/INFO]: Loaded 5 Static Content files for wolveswitharmor:wolf_armor
+[14:23:22] [main/INFO]: [STDOUT]: May you find fine hats!
+[14:23:22] [main/INFO]: [STDOUT]: net.minecraft.class_2248
+[14:23:22] [main/INFO]: Initializing BYG...
+[14:23:22] [main/INFO]: BYG: Added Flammables!
+[14:23:22] [main/INFO]: BYG: Added strippable Blocks...
+[14:23:22] [main/INFO]: Adding Numerical Biome ID's
+[14:23:22] [main/INFO]: Added Numerical Biome ID's!
+[14:23:22] [main/INFO]: Initialized BYG!
+[14:23:22] [main/INFO]: [Hwyla Addon Horse Info] Initializing Hwyla Addon Horse Info
+[14:23:23] [main/INFO]: Initializing StacktraceDeobfuscator
+[14:23:23] [main/INFO]: Done initializing StacktraceDeobfuscator
+[14:23:24] [main/INFO]: Industrial Revolution has initialized.
+[14:23:24] [main/INFO]: Reborn core is done for now, now to let other mods have their turn...
+[14:23:24] [main/INFO]: [RER] Hello Fabric world!
+[14:23:25] [main/INFO]: [STDOUT]: Deep Mob Learning: Refabricated is good to go
+[14:23:29] [main/INFO]: Loaded configuration file "/Applications/MultiMC.app/Contents/MacOS/instances/All-of-Fabric-3/.minecraft/config/hard-hat-steve.properties"
+[14:23:29] [main/INFO]: Flesh 2 Leather setup complete!
+[14:23:30] [main/INFO]: Definitely not up to no good
+[14:23:31] [main/INFO]: [Cotton Datapack]: Loaded config.
+[14:23:31] [main/INFO]: RedDragon API initialized
+                             ___====-_  _-====___
+                       _--^^^#####//      \\#####^^^--_
+                    _-^##########// (    ) \\##########^-_
+                   -############//  |\^^/|  \\############-
+                 _/############//   (@::@)   \\############\_
+                /#############((     \\//     ))#############\
+               -###############\\    (oo)    //###############-
+              -#################\\  / VV \  //#################-
+             -###################\\/      \//###################-
+            _#/|##########/\######(   /\   )######/\##########|\#_
+            |/ |#/\#/\#/\/  \#/\##\  |  |  /##/\#/  \/\#/\#/\#| \|
+            `  |/  V  V  `   V  \#\| |  | |/#/  V   '  V  V  \|  '
+               `   `  `      `   / | |  | | \   '      '  '   '
+                                (  | |  | |  )
+                               __\ | |  | | /__
+                              (vvv(VVV)(VVV)vvv)
+[14:23:32] [main/INFO]: Slab Helper initialized
+[14:23:32] [main/INFO]: [Better Graves] Initializing
+[14:23:32] [main/INFO]: [Better Graves] Registering handler bg-trinkets
+[14:23:32] [main/INFO]: Silk not found, not loading compatibility for fluids.
+[14:23:32] [main/INFO]: RebornCore found, loading compatibility for fluids.
+[14:23:36] [main/INFO]: [expandedstorage] New config keys found, saved merged config.
+[14:23:36] [CraftPresence/INFO]: Received Update Status for craftpresence -> UP_TO_DATE (Target Version: v1.6.8)
+[14:23:36] [CraftPresence/INFO]: Configuration Settings have been Saved and Reloaded Successfully!
+[14:23:36] [CraftPresence/INFO]: Searching for Character and Glyph Width Data...
+[14:23:36] [CraftPresence/INFO]: Character and Glyph Width Data successfully Loaded!
+[14:23:37] [CraftPresence/INFO]: Checking for valid Curse Manifest Data...
+[14:23:37] [CraftPresence/ERROR]: Unable to get Curse Manifest Data (Ignore if Not using a Twitch/CursePack)
+[14:23:37] [CraftPresence/INFO]: Checking for valid MultiMC Instance Data...
+[14:23:37] [CraftPresence/INFO]: Found MultiMC Instance Data! ( Name: "All of Fabric 3 Indev" - Icon: "infinity" )
+[14:23:37] [CraftPresence/INFO]: Checking Discord for Available Assets with ID: 677905791625199630
+[14:23:37] [CraftPresence/INFO]: Originally Coded by paulhobbel - https://github.com/paulhobbel
+[14:23:37] [main/INFO]: Mod 'loadcatcher' uses the modmenu:clientsideOnly custom value unnecessarily, as it can be inferred from the mod's declared environment.
+[14:23:37] [main/INFO]: Mod 'healthoverlay' uses the modmenu:clientsideOnly custom value unnecessarily, as it can be inferred from the mod's declared environment.
+[14:23:37] [main/INFO]: Mod 'lightoverlay' uses the modmenu:clientsideOnly custom value unnecessarily, as it can be inferred from the mod's declared environment.
+[14:23:37] [main/INFO]: Mod 'craftpresence' uses the modmenu:clientsideOnly custom value unnecessarily, as it can be inferred from the mod's declared environment.
+[14:23:37] [main/INFO]: Mod 'cloth-scissors-api-v1' uses the modmenu:clientsideOnly custom value unnecessarily, as it can be inferred from the mod's declared environment.
+[14:23:37] [CraftPresence/INFO]: 1 Total Assets Detected!
+[14:23:37] [main/INFO]: Config loaded.
+[14:23:38] [CraftPresence/INFO]: Loaded Display Data with ID: 677905791625199630 (Logged in as Monster Zero)
+[14:23:38] [main/INFO]: [Indigo] Registering Indigo renderer!
+[14:23:38] [ForkJoinPool.commonPool-worker-9/INFO]: Start Loading of CTS.
+[14:23:38] [main/INFO]: Loading Xaero's Minimap - Stage 1/2
+[14:23:39] [CraftPresence/ERROR]: Feature: Not a JSON object: "techreborn:ore_techreborn_tungsten_ore"; Not a JSON object: "techreborn:ore_techreborn_sodalite_ore"; Not a JSON object: "techreborn:ore_techreborn_sheldonite_ore"; Not a JSON object: "techreborn:ore_techreborn_peridot_ore"; Not a JSON object: "appliedenergistics2:quartz_ore"
+[14:23:39] [main/INFO]: Reloaded configs for tweed (universal/highest)
+[14:23:39] [main/INFO]: Reloaded configs for mousewheelie (universal/highest)
+[14:23:40] [main/INFO]: Loading Xaero's World Map - Stage 1/2
+[14:23:40] [CraftPresence/ERROR]: Feature: Not a JSON object: "allure:speleothem"
+[14:23:40] [main/INFO]: [STDOUT]: JumpOverFences initialized!
+[14:23:40] [main/INFO]: [STDOUT]: GameInfo: Load Config
+[14:23:40] [main/INFO]: [Egg Tab] Moving spawn eggs
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:zoglin_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:pillager_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:evoker_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:silverfish_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:squid_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:zombie_horse_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:vex_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:mule_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:panda_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:wolf_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:zombie_villager_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:cod_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:horse_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:phantom_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:spider_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:turtle_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:rabbit_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:piglin_brute_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: endreborn:endguard_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:pig_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:tropical_fish_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:llama_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:vindicator_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:drowned_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:stray_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:witch_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:bee_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:skeleton_horse_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:ravager_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:bat_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:cave_spider_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:guardian_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:pufferfish_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:magma_cube_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:cow_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:elder_guardian_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:strider_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:endermite_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:enderman_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:parrot_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:chicken_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:piglin_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:slime_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:wither_skeleton_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:hoglin_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:shulker_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:villager_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:polar_bear_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:trader_llama_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:ghast_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:ocelot_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: allure:crab_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:donkey_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:cat_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:sheep_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:salmon_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:blaze_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:fox_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:skeleton_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:dolphin_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:mooshroom_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:wandering_trader_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:zombie_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:husk_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:creeper_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Egged: minecraft:zombified_piglin_spawn_egg
+[14:23:40] [main/INFO]: [Egg Tab] Now listening for new eggs
+[14:23:40] [main/INFO]: [Egg Tab] Moving enchanted books
+[14:23:43] [main/INFO]: [Better Graves] Client Initializing
+[14:23:44] [main/INFO]: [Entrypoint Catcher] Mod Initialization complete
+[14:23:44] [main/INFO]: [Entrypoint Catcher] Mod Initialization complete
+[14:23:44] [main/INFO]: Backend library: LWJGL version 3.2.2 build 10
+[14:23:45] [main/INFO]: Loaded kubejs/client.properties
+[14:23:47] [ForkJoinPool.commonPool-worker-9/INFO]: Hello From 'Slight' Gui Modifications cts script
+[14:23:48] [main/WARN]: @ModifyVariable(@At("INVOKE")) Shift.BY=2 on magna.mixins.json:WorldRendererMixin::localvar$zdb000$appendBlockBreakingProgressions exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
+[14:23:51] [main/INFO]: Reloading ResourceManager: Default, Fermion, Crudade Mod, KubeJS, Ezpas, Step Height Entity Attribute, Fabric Loader, Trinkets, Iron Jetpacks, Kibe, Fabric Game Rule API (v1), Fermion Modifier Keys, Fabric API Base, Packages, Common Expansion: Foodstuffs, Pal, Hwyla, Villager Hats, Astromine: Foundations, Bunch O' Trinkets, Fabric Diagonal Panes, Fabric Networking (v0), Pling, Tech Reborn, CleanCut, Repurposed Structures, Mod Menu, Flora Doubling, Phosphor, Sbinnery, REI (Runtime), Structure Helpers, Better Enchanted Books, Fabric Crash Report Info (v1), Fabric Key Binding API (v1), Trap Expansion, Compact Status Effects, Static Data, LibBlockAttributes (Fluids), Magna, Adorn, Parchment, Linked Storage, MAmbience, Vanilla Excavators, Fabric Object Builder API (v1), Rings of Ascension, Hardcore Questing Mode, Fabric Rendering Data Attachment (v1), Wolves With Armor, Linkart, Reach Entity Attribute, Fabric Lifecycle Events (v1), Fabric Loot Tables (v1), Dynamic FPS, Get Off My Lawn, LibBlockAttributes (Core), Bamboo Tweaks, Compressed Blocks, Boring Backgrounds, Xpstorage, Jankson, Cotton Commons, Fabric Renderer - Indigo, Advancements Enlarger, Shapes, LibGui, 'Slight' GUI Modifications, Xaero's Minimap, Fabric Rendering (v0), Fabric Rendering (v1), Packed, Give Me Hats!, Winged Mod, Auto Config v1 Updated, Harvest, Fabric Tag Extensions (v0), AppleSkin, cAn i MiNe thIS bLOCk?, BYG, Fabric Events Lifecycle (v0), Horse Info, Energy, Tweed API, Fabric Key Bindings (v0), Not Enough Crashes, Artifice, Stonecutter Tweaks, Industrial Revolution, Health Overlay, Soulbound, Staff of Building, Glassential, Reborn Core, Xaero's World Map, Controlling For Fabric, Dank Storage, Diggus Maximus, Roughly Enough Resources, Fabric BlockRenderLayer Registration (v1), LibBlockAttributes (Items), Fabric API, GameInfo, Respawnable Pets, Deep Mob Learning: Refabricated, TIS-3D, Wrenchable, Fabric Screen Handler API (v1), Improved Stations, Egg Tab, TacoCraft, Fabric Tool Attribute API (v1), Blockus, Fabric Events Interaction (v0), Fabric Language Kotlin, Patchouli, Mouse Wheelie, Cloth Config v4, Hard Hat Steve, Fabric Resource Loader (v0), End: Rebellion, ExpandedStorage, Fabric Registry Sync (v0), Cherished Worlds, Light Overlay, Fabric Mining Levels (v0), Fabric Item Groups (v0), Fabric Models (v0), Shulker Box Tootip, CraftPresence, Fabric Renderer API (v1), Inventory Sorter, LibCapableData, Flesh2Leather, Vanilla Hammers, Simple Void World, Allure, Simple Teleporters, Blade, Crawl, Fabric Containers (v0), Applied Energistics 2, Manningham Mills, Campanion, Fabric Textures (v0), Fabric Rendering Fluids (v1), Bedspreads, Glass Doors, Fabric Renderer Registries (v1), Quick Shulker, slotlink, Fabric Networking Block Entity (v0), Crooked Crooks, Amecs API, Spinnery, Roughly Enough Items, Fabric Item API (v1), Cotton Datapack, RedDragon API, RedDragon Marvelous Machines, Slab Helper, Fabric Content Registries (v0), Better Graves, Fabric Furnaces, Astromine: Core, Fabric Object Builders (v0), Secret Rooms, slightguimodifications:cts_textures, secretrooms:client_pack, KubeJS Resource Pack, fabric-diagonal-panes:models (virtual)
+[14:23:51] [main/INFO]: [STDOUT]: false - 7 - 1
+[14:23:51] [main/INFO]: Loading Xaero's Minimap - Stage 2/2
+[14:23:52] [main/INFO]: [STDOUT]: Xaero's Minimap: World Map found!
+[14:23:52] [main/INFO]: Loading Xaero's World Map - Stage 2/2
+[14:23:52] [main/INFO]: Xaero's WorldMap Mod: Xaero's minimap found!
+[14:23:52] [main/INFO]: [STDOUT]: No Optifine!
+[14:24:50] [Worker-Main-14/WARN]: Unable to load model: 'astromine:fire_extinguisher#inventory' referenced from: astromine:fire_extinguisher#inventory: java.io.FileNotFoundException: astromine:models/item/fire_extinguisher.json
+[14:24:50] [Worker-Main-14/WARN]: Unable to load model: 'appliedenergistics2:dummy_fluid_item#inventory' referenced from: appliedenergistics2:dummy_fluid_item#inventory: java.io.FileNotFoundException: appliedenergistics2:models/item/dummy_fluid_item.json
+[14:25:03] [Worker-Main-14/WARN]: Unable to resolve texture reference: #missing in dml-refabricated:item/cafeteria
+[14:25:03] [Worker-Main-14/WARN]: Unable to resolve texture reference: #missing in dml-refabricated:block/cafeteria
+[14:25:03] [Worker-Main-14/WARN]: Unable to resolve texture reference: #missing in bettergraves:block/better_grave
+[14:25:07] [Worker-Main-14/WARN]: Texture dml-refabricated:armor/emeritus_hat with size 32x33 limits mip level from 4 to 0
+[14:25:07] [Worker-Main-14/WARN]: minecraft:textures/atlas/blocks.png: dropping miplevel from 4 to 0, because of minimum power of two: 1
+[14:25:13] [main/WARN]: Missing sound for event: astromine:empty
+[14:25:13] [main/INFO]: OpenAL initialized.
+[14:25:13] [main/INFO]: Sound engine started
+[14:25:15] [main/INFO]: Created: 4096x2048x0 minecraft:textures/atlas/blocks.png-atlas
+[14:25:15] [main/INFO]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[14:25:15] [main/INFO]: Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[14:25:15] [main/INFO]: Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[14:25:15] [main/INFO]: Created: 1024x1024x4 minecraft:textures/atlas/chest.png-atlas
+[14:25:15] [main/INFO]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[14:25:15] [main/INFO]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[14:25:22] [main/INFO]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[14:25:22] [main/INFO]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[14:25:22] [main/INFO]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[14:25:22] [main/INFO]: Parsing theme spinnery:dark
+[14:25:22] [main/INFO]: Parsing theme spinnery:default
+[14:25:22] [main/ERROR]: Failed to read configuration file for sbinnery!
+[14:25:22] [main/INFO]: Reloaded configs for tweed (client/smallest)
+[14:25:22] [main/INFO]: Reloaded configs for mousewheelie (client/smallest)
+[14:25:22] [main/INFO]: Parsing theme spinnery:dark
+[14:25:22] [main/INFO]: Parsing theme spinnery:default
+[14:25:40] [main/INFO]: Connecting to dev.aof3.lab717.com, 25565
+[14:25:43] [Netty Client IO #1/ERROR]: Feature: Not a JSON object: "techreborn:ore_techreborn_tungsten_ore"; Not a JSON object: "techreborn:ore_techreborn_sodalite_ore"; Not a JSON object: "techreborn:ore_techreborn_sheldonite_ore"; Not a JSON object: "techreborn:ore_techreborn_peridot_ore"; Not a JSON object: "appliedenergistics2:quartz_ore"
+[14:25:44] [Netty Client IO #1/ERROR]: Feature: Not a JSON object: "allure:speleothem"
+[14:25:44] [Netty Client IO #1/INFO]: [STDOUT]: New minimap session initialized!
+[14:25:45] [Netty Client IO #1/INFO]: [STDOUT]: New world map session initialized!
+[14:25:45] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', name='PROD'
+[14:25:46] [main/INFO]: Requested config sync for tweed
+[14:25:46] [main/INFO]: Requested config sync for mousewheelie
+[14:25:46] [CraftPresence/ERROR]: Asset Name "overworld" does not exist, attempting to use an alternative Icon "aof3-logo_512x512"...
+[14:25:46] [CraftPresence/INFO]: To Add Support for this Icon, Please Request for this Icon to be Added to the Default Client ID or Add the Icon under the following Name: "overworld".
+[14:25:46] [CraftPresence/INFO]: Fallback Icon for "overworld" Found! Using Fallback Icon with Name "aof3-logo_512x512"!
+[14:25:46] [CraftPresence/ERROR]: Asset Name "aof3_dev" does not exist, attempting to use an alternative Icon "aof3-logo_512x512"...
+[14:25:46] [CraftPresence/INFO]: To Add Support for this Icon, Please Request for this Icon to be Added to the Default Client ID or Add the Icon under the following Name: "aof3_dev".
+[14:25:46] [CraftPresence/INFO]: Fallback Icon for "aof3_dev" Found! Using Fallback Icon with Name "aof3-logo_512x512"!
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:infuse/indrev:infusing/molten_netherite_bucket
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_34_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_30_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_94_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_5_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:pulverizer/sand_pulverizer
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/overworld/trialkeystone_0
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_90_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_44_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:pulverizer/coal_dust_from_ore
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:loot_fabricator/dml-refabricated:loot_fabricator/end
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_45_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_89_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_33_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:pulverizer/coal_dust
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:loot_fabricator/dml-refabricated:loot_fabricator/slimy
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/skeleton/trialkeystone_2
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:pulverizer/tin_dust
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/ocean/trialkeystone_1
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/zombie/trialkeystone_4
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_59_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_37_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/slimy/trialkeystone_4
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/ghost/trialkeystone_2
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/nether/trialkeystone_3
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/zombie/trialkeystone_3
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/ocean/trialkeystone_0
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_96_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/end/trialkeystone_4
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:pulverizer/iron_dust_from_ingot
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_55_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_69_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/illager/trialkeystone_2
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_14_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/slimy/trialkeystone_2
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_39_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:pulverizer/blaze_power
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:pulverizer/diamond_dust
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/illager/trialkeystone_1
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_6_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_88_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_3_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:loot_fabricator/dml-refabricated:loot_fabricator/ghost
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/ghost/trialkeystone_3
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_18_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:pulverizer/bone_meal
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/nether/trialkeystone_0
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/end/trialkeystone_3
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_78_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_81_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:loot_fabricator/dml-refabricated:loot_fabricator/skeleton
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:pulverizer/copper_dust_from_ingot
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_80_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_101_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:infuse/indrev:infusing/coolant_bucket
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_31_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_22_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/slimy/trialkeystone_0
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_41_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_10_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_7_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_63_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:recycle/indrev:recycling/triple_biomass
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:compressing/tin_plate_from_compressor
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_83_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_76_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_13_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_67_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:infuse/indrev:infusing/enriched_nikolite_ingot
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_68_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_25_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_51_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_23_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_27_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_73_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_65_minecraft_air
+[14:25:47] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_99_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/nether/trialkeystone_1
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_20_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_91_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_71_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:compressing/gold_plate_from_compressor
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:crushing/dml-refabricated:soot_redstone
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_50_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:infuse/indrev:infusing/nikolite_ingot
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_49_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_11_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_48_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_17_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/ocean/trialkeystone_4
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:pulverizer/diamond_dust_from_ore
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_85_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_64_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_21_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_24_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:recycle/indrev:recycling/double_biomass
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_16_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_8_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_43_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_28_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/illager/trialkeystone_3
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_2_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:pulverizer/copper_dust
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_72_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/ghost/trialkeystone_4
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_77_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/slimy/trialkeystone_1
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_46_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/zombie/trialkeystone_2
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_19_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/nether/trialkeystone_4
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:compressing/iron_plate_from_compressor
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:pulverizer/iron_dust
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_70_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_75_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:loot_fabricator/dml-refabricated:loot_fabricator/overworld
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/zombie/trialkeystone_0
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:recycle/indrev:recycling/single_biomass
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/illager/trialkeystone_0
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/overworld/trialkeystone_3
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_26_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/end/trialkeystone_2
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_29_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_15_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/skeleton/trialkeystone_0
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_82_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:pulverizer/gold_dust_from_ingot
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_74_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_93_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/zombie/trialkeystone_1
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_42_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:loot_fabricator/dml-refabricated:loot_fabricator/illager
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_54_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_56_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/skeleton/trialkeystone_3
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:compressing/steel_plate
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_100_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/ghost/trialkeystone_0
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_92_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:pulverizer/tin_dust_from_ingot
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/end/trialkeystone_1
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_86_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_62_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_102_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_40_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/ghost/trialkeystone_1
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/overworld/trialkeystone_1
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:loot_fabricator/dml-refabricated:loot_fabricator/zombie
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_58_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/skeleton/trialkeystone_1
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:compressing/copper_plate_from_compressor
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_84_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_53_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/overworld/trialkeystone_4
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:infuse/indrev:infusing/enriched_nikolite
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_36_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_35_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/ocean/trialkeystone_2
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_4_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_97_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_52_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:pulverizer/cobblestone_pulverizer
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:pulverizer/gravel_pulverizer
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/overworld/trialkeystone_2
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:pulverizer/gold_dust
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_66_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:pulverizer/flint_pulverizer
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_57_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_12_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_87_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_79_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_9_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_95_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_32_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_103_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:loot_fabricator/dml-refabricated:loot_fabricator/nether
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_1_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/skeleton/trialkeystone_4
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/nether/trialkeystone_2
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:pulverize/indrev:kubejs_generated_98_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: kibe:vacuum_hopper/kibe:experience_bottle
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/illager/trialkeystone_4
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_38_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: indrev:compress/indrev:kubejs_generated_47_minecraft_air
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:loot_fabricator/dml-refabricated:loot_fabricator/ocean
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/ocean/trialkeystone_3
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/slimy/trialkeystone_3
+[14:25:48] [main/WARN]: Unknown recipe category: kibe:vacuum_hopper/kibe:liquid_xp_bucket
+[14:25:48] [main/WARN]: Unknown recipe category: dml-refabricated:trial_keystone/dml-refabricated:trial/end/trialkeystone_0
+[14:25:49] [REI-SyncRecipes/INFO]: Reloading REI, registered 14 plugins: roughlyenoughresources:rer_plugin, astromine:rei_plugin, techreborn:techreborn_plugin, appliedenergistics2:core, blade:roughly_enough_items_plugin, sbinnery:rei_plugin, spinnery:rei_plugin, hardcorequesting:rei_integration, improved-stations:rei_plugin, indrev:rei_plugin, roughlyenoughitems:default_runtime_plugin, slotlink:rei, dml-refabricated:rei_compat, roughlyenoughitems:default_plugin
+[14:25:50] [Netty Client IO #1/INFO]: Syncing local configs from the server!
+[14:25:50] [Netty Client IO #1/INFO]: We're now be in sync.
+[14:25:50] [REI-SyncRecipes/INFO]: Applied Check Tags for potion in 238ms.
+[14:25:51] [REI-SyncRecipes/INFO]: Refiltered 0 entries with 1 rules in 39ms.
+[14:25:51] [REI-SyncRecipes/INFO]: Reloaded 5878 stack entries, 37555 recipes displays, 5 exclusion zones suppliers, 8 overlay deciders, 1 visibility handlers and 68 categories (Crafting, Smelting, Smoking, Blasting, Campfire, Stone Cutting, Fuel, Brewing, Composting, Stripping, Smithing, Beacon Base, Tilling, Pathing, Information, Crushing Recipe, Trial, Loot Fabricator, Pulverizing, Infusing, Compressing, Recycling, Quartz Grindstone, Matter Condenser, Inscriber, Applied Energistics 2 - Facades, Alloy Smelter, Assembling Machine, Blast Furnace, Industrial Centrifuge, Chemical Reactor, Compressor, Distillation Tower, Extractor, Fluid Replicator, Fusion Reactor, Grinder, Implosion Compressor, Industrial Electrolyzer, Industrial Grinder, Industrial Sawmill, Rolling Machine, Scrapbox, Solid Canning Machine, Vacuum Freezer, Wire Mill, Thermal Generator, Gas Generator, Diesel Generator, Semifluid Generator, Plasma Generator, Triturating, Electric Smelting, Liquid Generating, Solid Generating, Fluid Mixing, Electrolyzing, Pressing, Alloy Smelting, Earth Space Generation, Mars Generation, Moon Generation, Spatial Storage Generation, The End Generation, The Nether Generation, Overworld Generation, Block Loot Drop, Entity Loot Drop) in 1923ms.
+[14:26:13] [main/INFO]: [STDOUT]: Minimap updated server level id: -700257724 for world ResourceKey[minecraft:dimension / minecraft:overworld]
+[14:26:13] [main/INFO]: Loaded 10 advancements
+[14:26:13] [main/ERROR]: Failed to load remote questing state from description.txt
+[14:26:16] [main/ERROR]: Feature: Not a JSON object: "techreborn:ore_techreborn_tungsten_ore"; Not a JSON object: "techreborn:ore_techreborn_sodalite_ore"; Not a JSON object: "techreborn:ore_techreborn_sheldonite_ore"; Not a JSON object: "techreborn:ore_techreborn_peridot_ore"; Not a JSON object: "appliedenergistics2:quartz_ore"
+[14:26:16] [main/ERROR]: Feature: Not a JSON object: "allure:speleothem"
+[14:26:16] [main/ERROR]: Feature: Not a JSON object: "techreborn:ore_techreborn_tungsten_ore"; Not a JSON object: "techreborn:ore_techreborn_sodalite_ore"; Not a JSON object: "techreborn:ore_techreborn_sheldonite_ore"; Not a JSON object: "techreborn:ore_techreborn_peridot_ore"; Not a JSON object: "appliedenergistics2:quartz_ore"
+[14:26:17] [main/ERROR]: Feature: Not a JSON object: "allure:speleothem"

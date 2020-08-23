@@ -1,3 +1,19 @@
+<h1>2.0</h1>
+
+<h2>Be sure to always backup your world(s) before updating!</h2>
+
+**Added**
+	Muffle
+
+**Changed/Fixed**
+added more flowers to flower	
+
+**Changed/Updated**
+
+	sandwhich
+	kibe
+	blockus
+
 <h1>1.5.3</h1>
 
 <h2>Be sure to always backup your world(s) before updating!</h2>
