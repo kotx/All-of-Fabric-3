@@ -74,9 +74,21 @@ minecraft/chooser_0.png
 natives/
 
 mods/
+
 .DS_Store
+
 *.xwmc
+
 *.zip
+
 .minecraft/serversync-3.6.0.jar
+
 .minecraft/logs/serversync-client.log
+
 .minecraft/logs/latest.log
+
+.minecraft/XaeroWaypoints/
+
+.minecraft/XaeroWaypoints*/
+
+.minecraft/XaeroWorldMap/
