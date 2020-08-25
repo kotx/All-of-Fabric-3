@@ -25,8 +25,6 @@ minecraft/mobs_0.png
 
 minecraft/pings_0.png
 
-minecraft/options.txt
-
 minecraft/servers.dat
 
 minecraft/usercache.json
@@ -57,8 +55,6 @@ minecraft/chooser_0.png
 
 .minecraft/pings_0.png
 
-.minecraft/options.txt
-
 .minecraft/servers.dat
 
 .minecraft/usercache.json
@@ -82,22 +78,35 @@ mods/
 *.zip
 
 .minecraft/serversync-3.6.0.jar
+
 .minecraft/XaeroWaypoints/
+
 .minecraft/XaeroWaypoints*/
+
 .minecraft/XaeroWorldMap/
+
 .minecraft/logs/serversync-client.log
+
 .minecraft/deathpoints/dev.aof3.lab717.com.txt
+
 .minecraft/config/NetherTeleports/players/
+
 .minecraft/config/hqm/remote/
+
 .minecraft/config/itemmodelfix.json
+
 .minecraft/config/hqm/remote/description.txt
+
 .minecraft/config/hqm/remote/deaths.json
+
 .minecraft/config/hqm/remote/data.json
+
 .minecraft/config/hqm/remote/bags.json
+
 .minecraft/config/hqm/remote/Astromine.json
+
 .minecraft/config/fabric/indigo-renderer.properties
+
 .minecraft/config/craftpresence.properties
-instance.cfg
-.minecraft/hs_err_pid85663.log
-.minecraft/config/roughlyenoughitems/config.json5
-.minecraft/config/roughlyenoughitems/config.json5
+
+.minecraft/config/bebooks/config.properties

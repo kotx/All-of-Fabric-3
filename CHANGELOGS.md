@@ -3,16 +3,34 @@
 <h2>Be sure to always backup your world(s) before updating!</h2>
 
 **Added**
-	Muffle
+	crawl
+    not enough crashes
+    xp storage
+    get off my lawn
+    rswires
+    YOSBR
+    
+**removed**
+soulbound - bug when respawning    
 
 **Changed/Fixed**
-added more flowers to flower	
-
+added more flowers to flower-doubling
+grave key is now assigned to diggus maximus
+set server sync in HQM to true
+added silicone recipe for ae2
+fixed zoom key, should not conflict anymore
+fixed diggus key, should now be grave ` key
+made z key the default for crawl
 **Changed/Updated**
 
-	sandwhich
+	sandwhichable
 	kibe
 	blockus
+	dankstorage
+	vanilla hammers
+	cloth api
+	flonters
+	ok zoomer
 
 <h1>1.5.3</h1>
 
