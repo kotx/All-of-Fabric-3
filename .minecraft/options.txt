@@ -105,7 +105,7 @@ key_key.lightoverlay.enable_overlay:key.keyboard.f7
 key_key.waila.config:key.keyboard.keypad.0
 key_key.waila.show_overlay:key.keyboard.keypad.1
 key_key.waila.toggle_liquid:key.keyboard.keypad.2
-key_key.bunchotrinkets.belt:key.keyboard.semicolon
+key_key.bunchotrinkets.belt:key.keyboard.comma
 key_key.bunchotrinkets.pack:key.keyboard.left.bracket
 key_gui.xaero_switch_waypoint_set:key.keyboard.unknown
 key_gui.xaero_instant_waypoint:key.keyboard.k
@@ -114,10 +114,10 @@ key_gui.xaero_toggle_grid:key.keyboard.unknown
 key_gui.xaero_toggle_waypoints:key.keyboard.unknown
 key_gui.xaero_toggle_map_waypoints:key.keyboard.unknown
 key_gui.xaero_toggle_map:key.keyboard.unknown
-key_gui.xaero_enlarge_map:key.keyboard.apostrophe
+key_gui.xaero_enlarge_map:key.keyboard.period
 key_gui.xaero_waypoints_key:key.keyboard.u
-key_gui.xaero_zoom_in:key.keyboard.i
-key_gui.xaero_zoom_out:key.keyboard.o
+key_gui.xaero_zoom_in:key.keyboard.semicolon
+key_gui.xaero_zoom_out:key.keyboard.apostrophe
 key_gui.xaero_new_waypoint:key.keyboard.j
 key_gui.xaero_display_all_sets:key.keyboard.unknown
 key_gui.xaero_minimap_settings:key.keyboard.y
@@ -131,8 +131,8 @@ key_key.gameinfo.toggleshow:key.keyboard.i
 key_key.gameinfo.deathmessage:key.keyboard.unknown
 key_key.gameinfo.changemode:key.keyboard.o
 key_key.gameinfo.changelightmode:key.keyboard.unknown
-key_key.gameinfo.opensettings:key.keyboard.p
-key_key.dml-refabricated.teleport:key.keyboard.v
+key_key.gameinfo.opensettings:key.keyboard.equal
+key_key.dml-refabricated.teleport:key.keyboard.minus
 key_key.inventorysorter.sort:key.keyboard.p
 key_key.crawl:key.keyboard.z
 key_key.toggle_focus.desc:key.keyboard.unknown

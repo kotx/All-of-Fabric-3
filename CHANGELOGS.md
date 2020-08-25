@@ -21,6 +21,7 @@ added silicone recipe for ae2
 fixed zoom key, should not conflict anymore
 fixed diggus key, should now be grave ` key
 made z key the default for crawl
+moved rei search to right
 **Changed/Updated**
 
 	sandwhichable
