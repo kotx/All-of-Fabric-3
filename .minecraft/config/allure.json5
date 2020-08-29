@@ -16,9 +16,9 @@
 	"extraDarkForest": true,
 	"extraDarkForestSpawn": 30,
 	"johnnyChance": 3,
-	"gravestonesEnabled": true,
-	"lockGravestones": true,
-	"renderSkulls": true,
+	"gravestonesEnabled": false,
+	"lockGravestones": false,
+	"renderSkulls": false,
 	"renderCrateName": true,
 	"cactusGiveWater": true
 }

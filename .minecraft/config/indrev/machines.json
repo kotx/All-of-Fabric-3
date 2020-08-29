@@ -154,5 +154,53 @@
     "processSpeed": 200.0,
     "maxEnergyStored": 50000.0,
     "maxInput": 4096.0
+  },
+  "drain": {
+    "energyCost": 4.0,
+    "processSpeed": 20.0,
+    "maxEnergyStored": 1000.0,
+    "maxInput": 64.0
+  },
+  "smelter": {
+    "energyCost": 64.0,
+    "processSpeed": 4.0,
+    "maxEnergyStored": 50000.0,
+    "maxInput": 4096.0
+  },
+  "condenser": {
+    "energyCost": 64.0,
+    "processSpeed": 4.0,
+    "maxEnergyStored": 50000.0,
+    "maxInput": 4096.0
+  },
+  "fluidInfuserMk1": {
+    "energyCost": 4.0,
+    "processSpeed": 1.0,
+    "maxEnergyStored": 1000.0,
+    "maxInput": 64.0
+  },
+  "fluidInfuserMk2": {
+    "energyCost": 8.0,
+    "processSpeed": 2.0,
+    "maxEnergyStored": 5000.0,
+    "maxInput": 128.0
+  },
+  "fluidInfuserMk3": {
+    "energyCost": 16.0,
+    "processSpeed": 3.0,
+    "maxEnergyStored": 10000.0,
+    "maxInput": 512.0
+  },
+  "fluidInfuserMk4": {
+    "energyCost": 64.0,
+    "processSpeed": 4.0,
+    "maxEnergyStored": 100000.0,
+    "maxInput": 4096.0
+  },
+  "modularWorkbench": {
+    "energyCost": 16.0,
+    "processSpeed": 1.0,
+    "maxEnergyStored": 500000.0,
+    "maxInput": 4096.0
   }
 }

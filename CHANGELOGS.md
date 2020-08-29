@@ -9,9 +9,13 @@
     get off my lawn
     rswires
     YOSBR
+    pumice
+    rgbable
+    kronhud
     
 **removed**
-soulbound - bug when respawning    
+soulbound - bug when respawning
+gameinfo - replaced with kronhud
 
 **Changed/Fixed**
 added more flowers to flower-doubling
@@ -22,6 +26,9 @@ fixed zoom key, should not conflict anymore
 fixed diggus key, should now be grave ` key
 made z key the default for crawl
 moved rei search to right
+added recipe for rgb block
+set ctrl+r for recipe and ctrl+u for use
+set custom gui for kronhud
 **Changed/Updated**
 
 	sandwhichable
@@ -32,6 +39,7 @@ moved rei search to right
 	cloth api
 	flonters
 	ok zoomer
+	winged
 
 <h1>1.5.3</h1>
 

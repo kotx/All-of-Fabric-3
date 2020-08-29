@@ -1,1 +1,62 @@
-{"bookGuiScale":0,"clickedVisualize":false,"bookData":{}}
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "indrev:indrev": {
+      "viewedEntries": [
+        "indrev:machines/basic_machines",
+        "indrev:machines/rancher",
+        "indrev:machines/chopper",
+        "indrev:machines/generators",
+        "indrev:machines/batteries",
+        "indrev:tools/modular_armor",
+        "indrev:temperature/info",
+        "indrev:tools/hammer",
+        "indrev:upgrades/enhancement_upgrades",
+        "indrev:tools/energy_reader"
+      ],
+      "bookmarks": [],
+      "history": [
+        "indrev:machines/batteries",
+        "indrev:tools/energy_reader",
+        "indrev:upgrades/enhancement_upgrades",
+        "indrev:tools/hammer",
+        "indrev:temperature/info",
+        "indrev:machines/basic_machines",
+        "indrev:machines/generators",
+        "indrev:tools/modular_armor",
+        "indrev:machines/chopper",
+        "indrev:machines/rancher"
+      ],
+      "completedManualQuests": []
+    },
+    "astromine-core:manual": {
+      "viewedEntries": [
+        "astromine-core:machinery/vent",
+        "astromine-core:resources/fools_gold",
+        "astromine-core:machinery/energy_cable",
+        "astromine-core:components/gears",
+        "astromine-core:warfare/nuclear_warhead",
+        "astromine-core:machinery/creative_capacitor",
+        "astromine-core:machinery/convyor",
+        "astromine-core:resources/rose_gold",
+        "astromine-core:world/ore_clusters",
+        "astromine-core:resources/univite"
+      ],
+      "bookmarks": [],
+      "history": [
+        "astromine-core:resources/univite",
+        "astromine-core:world/ore_clusters",
+        "astromine-core:resources/rose_gold",
+        "astromine-core:machinery/convyor",
+        "astromine-core:machinery/creative_capacitor",
+        "astromine-core:warfare/nuclear_warhead",
+        "astromine-core:components/gears",
+        "astromine-core:machinery/energy_cable",
+        "astromine-core:resources/fools_gold",
+        "astromine-core:machinery/vent"
+      ],
+      "completedManualQuests": []
+    }
+  }
+}
