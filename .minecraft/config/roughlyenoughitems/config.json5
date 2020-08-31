@@ -1,28 +1,18 @@
 { 
 	"basics": { 
 		"favorites": [ 
-			"{\"type\":\"stack\",\"nbt\":\"{id:\\\"minecraft:spruce_planks\\\",Count:127b}\"}",
-			"{\"type\":\"stack\",\"nbt\":\"{id:\\\"minecraft:birch_wood\\\",Count:127b}\"}",
-			"{\"type\":\"stack\",\"nbt\":\"{id:\\\"minecraft:pink_concrete_powder\\\",Count:127b}\"}",
-			"{\"type\":\"stack\",\"nbt\":\"{id:\\\"minecraft:birch_log\\\",Count:127b}\"}",
-			"{\"type\":\"stack\",\"nbt\":\"{id:\\\"minecraft:grass_block\\\",Count:127b}\"}",
-			"{\"type\":\"stack\",\"nbt\":\"{id:\\\"iron-jetpacks:wood_capacitor\\\",Count:127b}\"}",
-			"{\"type\":\"stack\",\"nbt\":\"{id:\\\"minecraft:polished_andesite\\\",Count:127b}\"}",
-			"{\"type\":\"stack\",\"nbt\":\"{id:\\\"minecraft:stripped_birch_log\\\",Count:127b}\"}",
-			"{\"type\":\"stack\",\"nbt\":\"{id:\\\"minecraft:magenta_wool\\\",Count:127b}\"}",
-			"{\"type\":\"stack\",\"nbt\":\"{id:\\\"minecraft:sticky_piston\\\",Count:127b}\"}"
-		],
+				],
 		// Declares whether cheating mode is on.
-		"cheating": true,
+		"cheating": false,
 		"favoritesEnabled": true,
 		"keyBindings": { 
 			"recipeKeybind": { 
 				"keyCode": "key.keyboard.r",
-				"modifier": 2
+				"modifier": 0
 			},
 			"usageKeybind": { 
 				"keyCode": "key.keyboard.u",
-				"modifier": 2
+				"modifier": 0
 			},
 			"hideKeybind": { 
 				"keyCode": "key.keyboard.o",
@@ -55,7 +45,7 @@
 		},
 		// Declares whether REI is visible.
 		"overlayVisible": true,
-		"cheatingStyle": "GIVE"
+		"cheatingStyle": "GRAB"
 	},
 	"advanced": { 
 		"filtering": { 
@@ -80,7 +70,7 @@
 			"debugRenderTimeRequired": false
 		},
 		"accessibility": { 
-			"entrySize": 1.0,
+			"entrySize": 1.5,
 			// Declares the position of the entry panel.
 			"displayPanelLocation": "RIGHT",
 			// Declares whether scrolled entry panel should snap to rows.
@@ -143,6 +133,6 @@
 		// Declares whether REI should remove the recipe book.
 		"disableRecipeBook": false,
 		// Declares whether subsets is enabled.
-		"isSubsetsEnabled": true
+		"isSubsetsEnabled": false
 	}
 }

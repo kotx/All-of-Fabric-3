@@ -4,22 +4,18 @@
       "red": 0,
       "green": 0,
       "blue": 0,
-      "alpha": 57,
-      "color": 956301312
+      "alpha": 19,
+      "color": 318767104
     },
     "x": 1.0,
     "y": 1.0,
-    "width": 20,
-    "height": 100,
-    "scale": 0.9977662,
+    "scale": 0.9957994,
     "enabled": true
   },
   "itemUpdateHudStorage": {
     "timeout": 6000,
     "x": 0.0,
     "y": 1.0,
-    "width": 200,
-    "height": 80,
     "scale": 0.490669,
     "enabled": true
   },
@@ -41,8 +37,6 @@
     },
     "x": 0.83655274,
     "y": 0.3060241,
-    "width": 47,
-    "height": 13,
     "scale": 1.0,
     "enabled": false
   },
@@ -63,9 +57,7 @@
     },
     "x": 0.0014326648,
     "y": 0.0,
-    "width": 47,
-    "height": 13,
-    "scale": 0.4630254,
+    "scale": 0.6426194,
     "enabled": true
   },
   "pingHudStorage": {
@@ -83,18 +75,14 @@
       "alpha": 0,
       "color": 0
     },
-    "x": 0.032998566,
+    "x": 0.044927537,
     "y": 0.0,
-    "width": 47,
-    "height": 13,
-    "scale": 0.4933511,
+    "scale": 0.64834124,
     "enabled": true
   },
   "potionsHudStorage": {
     "x": 0.0,
     "y": 0.01910828,
-    "width": 60,
-    "height": 200,
     "scale": 0.57052433,
     "enabled": false
   },
@@ -115,8 +103,6 @@
     },
     "x": 0.5,
     "y": 0.0,
-    "width": 20,
-    "height": 30,
     "scale": 1.0,
     "enabled": false
   },
@@ -145,8 +131,6 @@
     },
     "x": 0.5,
     "y": 0.5,
-    "width": 17,
-    "height": 17,
     "scale": 1.0,
     "enabled": true
   },
@@ -167,8 +151,6 @@
     },
     "x": 0.25075075,
     "y": 0.21525885,
-    "width": 54,
-    "height": 61,
     "scale": 1.0,
     "enabled": false
   },
@@ -197,8 +179,6 @@
     "decimalNum": 0,
     "x": 0.12307692,
     "y": 0.1536524,
-    "width": 70,
-    "height": 31,
     "scale": 0.6854258,
     "enabled": false
   }
