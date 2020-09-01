@@ -116,3 +116,7 @@ mods/
 .minecraft/options.txt
 
 instance.cfg
+
+.minecraft/config/fabric/
+
+.minecraft/config/bebooks/

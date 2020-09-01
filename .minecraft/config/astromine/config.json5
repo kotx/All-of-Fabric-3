@@ -220,5 +220,11 @@
 	// Delay for the Fire Extinguisher sneaking actions.
 	"fireExtinguisherSneakingDelay": 2,
 	// Delay for the Fire Extinguisher standing actions.
-	"fireExtinguisherStandingDelay": 10
+	"fireExtinguisherStandingDelay": 10,
+	// Tick rate for gas movement in the atmosphere. This is inversely correlated to gas movement speed, higher means slower. Lower numbers are also less performant, so choose wisely.
+	"gasTickRate": 10,
+	// Numerator for the gas decay rate fraction. It will decay gas by this fraction every gas tick.
+	"gasDecayNumerator": 5,
+	// Denominator for the gas decay rate fraction. It will decay gas by this fraction every gas tick.
+	"gasDecayDenominator": 1024
 }
