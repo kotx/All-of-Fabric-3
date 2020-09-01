@@ -22,7 +22,7 @@
 	// Should player get exhaustion
 	"playerExhaustion": true,
 	// Multiply exhaustion when excavating
-	"exhaustionMultiplier": 2.0,
+	"exhaustionMultiplier": 16.0,
 	// Other items to be considered tools ie: "minecraft:stick"
 	"tools": []
 }

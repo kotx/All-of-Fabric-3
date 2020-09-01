@@ -110,3 +110,9 @@ mods/
 .minecraft/config/craftpresence.properties
 
 .minecraft/config/bebooks/config.properties
+
+.minecraft/deathpoints/
+
+.minecraft/options.txt
+
+instance.cfg

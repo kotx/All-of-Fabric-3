@@ -3,7 +3,7 @@
 		"favorites": [ 
 ],
 		// Declares whether cheating mode is on.
-		"cheating": false,
+		"cheating": true,
 		"favoritesEnabled": true,
 		"keyBindings": { 
 			"recipeKeybind": { 
@@ -45,7 +45,7 @@
 		},
 		// Declares whether REI is visible.
 		"overlayVisible": true,
-		"cheatingStyle": "GRAB"
+		"cheatingStyle": "GIVE"
 	},
 	"advanced": { 
 		"filtering": { 
@@ -57,7 +57,7 @@
 		},
 		"tooltips": { 
 			// Declares whether REI should append mod names to entries.
-			"appendModNames": true,
+			"appendModNames": false,
 			// Declares whether favorites tooltip should be displayed.
 			"displayFavoritesTooltip": true
 		},
@@ -70,7 +70,7 @@
 			"debugRenderTimeRequired": false
 		},
 		"accessibility": { 
-			"entrySize": 1.5,
+			"entrySize": 1.0,
 			// Declares the position of the entry panel.
 			"displayPanelLocation": "RIGHT",
 			// Declares whether scrolled entry panel should snap to rows.
@@ -122,7 +122,7 @@
 			// Declares whether the craftable filter button is enabled.
 			"enableCraftableOnlyButton": true,
 			// Declares whether the utils buttons are shown.
-			"showUtilsButtons": true
+			"showUtilsButtons": false
 		},
 		// Declares the appearance of recipe's border.
 		"recipeBorder": "LIGHTER",
@@ -131,7 +131,7 @@
 	},
 	"functionality": { 
 		// Declares whether REI should remove the recipe book.
-		"disableRecipeBook": false,
+		"disableRecipeBook": true,
 		// Declares whether subsets is enabled.
 		"isSubsetsEnabled": false
 	}

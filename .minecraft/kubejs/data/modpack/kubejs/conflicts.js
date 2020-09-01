@@ -32,6 +32,35 @@ events.listen("recipes", function (event) {
     "astromine:diamond_fragment"
   );
 
+  // Crafting Tables
+  var tables = [
+  "byg:aspen_crafting_table",
+  "byg:baobab_crafting_table",
+  "byg:blue_enchanted_crafting_table",
+  "byg:cherry_crafting_table",
+  "byg:cika_crafting_table",
+  "byg:cypress_crafting_table",
+  "byg:ebony_crafting_table",
+  "byg:fir_crafting_table",
+  "byg:green_enchanted_crafting_table",
+  "byg:zelkova_crafting_table",
+  "byg:witch_hazel_crafting_table",
+  "byg:willow_crafting_table",
+  "byg:holly_crafting_table",
+  "byg:jacaranda_crafting_table",
+  "byg:mahogany_crafting_table",
+  "byg:mangrove_crafting_table",
+  "byg:mangrove_crafting_table",
+  "byg:pine_crafting_table",
+  "byg:rainbow_eucalyptus_crafting_table",
+  "byg:redwood_crafting_table",
+  "byg:skyris_crafting_table",
+  ];
+
+  tables.forEach(function (item, index) {
+    event.remove({ type: "crafting_shaped", output: item });
+  });
+
   // Fragments
   event.remove({ output: "techreborn:diamond_nugget" });
   event.remove({ output: "techreborn:emerald_nugget" });
