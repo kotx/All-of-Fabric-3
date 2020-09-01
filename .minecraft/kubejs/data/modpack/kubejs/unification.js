@@ -16,6 +16,13 @@ events.listen("recipes", function (event) {
 
   // Dust Unification
   var dusts = [
+      "coal_dust",
+      "charcoal_dust",
+      "iron_dust",
+      "gold_dust",
+      "diamond_dust",
+      "emerald_dust",
+      "quartz_dust",
       "copper_dust",
       "lead_dust", 
       "tin_dust",

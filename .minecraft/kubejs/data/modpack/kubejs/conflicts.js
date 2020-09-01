@@ -1,6 +1,6 @@
 events.listen("recipes", function (event) {
   
-  /*
+  
   // Kitchen Knife
   event.remove({ output: "sandwichable:kitchen_knife" });
 
@@ -9,7 +9,6 @@ events.listen("recipes", function (event) {
     ["minecraft:iron_nugget"],
     ["minecraft:stick"],
   ]);
-  */
 
   // Chest
   event.shaped(item.of("minecraft:chest", 4), [

@@ -32,4 +32,7 @@ events.listen("recipes", function (event) {
   event.remove({ id: "techreborn:crafting_table/solar_panel/industrial_solar_panel_alt" });
   event.remove({ id: "techreborn:crafting_table/solar_panel/advanced_solar_panel_alt" });
   event.remove({ id: "techreborn:crafting_table/solar_panel/advanced_solar_panel_alt" });
+
+  // Metals
+  event.remove({ id: "indrev:shapeless/steel_dust" });
 });
