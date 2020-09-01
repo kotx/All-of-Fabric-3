@@ -69,7 +69,7 @@ showLightLevel:false
 renderLayerIndex:1
 crossDimensionalTp:true
 mpCrossDimensionalTp:false
-showTime:0
+showTime:1
 biomeColorsVanillaMode:false
 lookingAtAngle:20
 lookingAtAngleVertical:180

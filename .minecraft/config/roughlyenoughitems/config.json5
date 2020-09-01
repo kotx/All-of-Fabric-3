@@ -53,7 +53,9 @@
 				"{rule:{},id:\"roughlyenoughitems:manual\"}"
 			],
 			"filteredStacks": [ 
-]
+				"{\"type\":\"stack\",\"nbt\":\"{id:\\\"indrev:steel_ingot\\\",Count:1b}\"}",
+				"{\"type\":\"stack\",\"nbt\":\"{id:\\\"astromine:steel_ingot\\\",Count:1b}\"}"
+			]
 		},
 		"tooltips": { 
 			// Declares whether REI should append mod names to entries.
