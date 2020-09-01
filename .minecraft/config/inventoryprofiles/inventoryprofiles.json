@@ -9,6 +9,8 @@
     "interval_between_clicks_ms": 50
   },
   "GuiSettings": {
-    "continuous_crafting_saved_value": false
+    "enable_inventory_buttons": false,
+    "continuous_crafting_saved_value": false,
+    "use_old_insert_method": true
   }
 }
