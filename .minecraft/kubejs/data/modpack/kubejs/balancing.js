@@ -14,9 +14,17 @@ events.listen("recipes", function (event) {
   // Boosters
   event.remove({ output: "winged:booster_empty" });
   event.shaped(item.of("winged:booster_empty"), [
-    [null,                     "techreborn:steel_ingot", null],
-    ["techreborn:steel_ingot", "techreborn:cell",        "techreborn:steel_ingot"],
-    ["techreborn:steel_ingot", "techreborn:cell",        "techreborn:steel_ingot"],
+    ["techreborn:tungstensteel_plate", "techreborn:steel_ingot", "techreborn:tungstensteel_plate"],
+    ["techreborn:steel_ingot",         "techreborn:cell",        "techreborn:steel_ingot"],
+    ["techreborn:steel_ingot",         "techreborn:cell",        "techreborn:steel_ingot"],
+  ]);
+
+  // Rocket Aglet
+  event.remove({ output: "bunchotrinkets:rocket_aglet" });
+  event.shaped(item.of("bunchotrinkets:rocket_aglet"), [
+    ["techreborn:tungstensteel_plate", "techreborn:mixed_metal_ingot",     "techreborn:tungstensteel_plate"],
+    ["minecraft:firework_rocket",      "blockus:legacy_nether_reactor_core", "minecraft:firework_rocket"],
+    ["techreborn:tungstensteel_plate", "techreborn:mixed_metal_ingot",     "techreborn:tungstensteel_plate"],
   ]);
 
   // Solar Panels
