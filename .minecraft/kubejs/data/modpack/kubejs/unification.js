@@ -28,6 +28,21 @@ events.listen("recipes", function (event) {
     event.replaceOutput({}, "astromine:" + item, "techreborn:" + item);
   });
 
+  // Block Unification
+  var blocks = [
+    "copper_block", 
+    "tin_block",
+    "lead_block",
+    "silver_block",
+    "steel_block", 
+    "bronze_block",
+  ];
+
+  blocks.forEach(function (item, index) {
+    event.replaceOutput({}, "astromine:" + item, "techreborn:" + item);
+    event.replaceOutput({}, "indrev:" + item, "techreborn:" + item);
+  });
+
   // Plate Unification
   var plates = [
     "iron_plate",
