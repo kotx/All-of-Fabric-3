@@ -1,7 +1,7 @@
 {
   "copper": false,
   "tin": false,
-  "nikolite": true,
+  "nikolite": false,
   "sulfuricAcidLake": true,
   "sulfurCrystals": true
 }
