@@ -1,0 +1,9 @@
+autoJump:false
+amecsapi$key_modifier$key.mousewheelie.sort_inventory:
+key_key.mousewheelie.sort_inventory:key.keyboard.unknown
+amecsapi$key_modifier$key.inventorysorter.sort:
+key_key.inventorysorter.sort:key.keyboard.r
+amecsapi$key_modifier$key.crawl:
+key_key.crawl:key.keyboard.z
+amecsapi$key_modifier$key.okzoomer.zoom:
+key_key.okzoomer.zoom:key.keyboard.c
