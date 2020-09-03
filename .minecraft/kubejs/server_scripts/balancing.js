@@ -22,9 +22,9 @@ events.listen("recipes", function (event) {
   // Rocket Aglet
   event.remove({ output: "bunchotrinkets:rocket_aglet" });
   event.shaped(item.of("bunchotrinkets:rocket_aglet"), [
-    ["techreborn:tungstensteel_plate", "techreborn:mixed_metal_ingot",     "techreborn:tungstensteel_plate"],
+    ["astromine:stellum_plate", "astromine:stellum_ingot",     "astromine:stellum_plate"],
     ["minecraft:firework_rocket",      "blockus:legacy_nether_reactor_core", "minecraft:firework_rocket"],
-    ["techreborn:tungstensteel_plate", "techreborn:mixed_metal_ingot",     "techreborn:tungstensteel_plate"],
+    ["astromine:stellum_plate", "astromine:stellum_ingot",     "astromine:stellum_plate"],
   ]);
 
   // Altar
