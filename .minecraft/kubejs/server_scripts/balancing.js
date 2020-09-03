@@ -7,8 +7,8 @@ events.listen("recipes", function (event) {
   event.remove({ output: "kibe:angel_ring" });
   event.shaped(item.of("kibe:angel_ring"), [
     ["dml-refabricated:glitch_ingot",  "astromine:univite_block",         "dml-refabricated:glitch_ingot"],
-    ["techreborn:quantum_solar_panel", "kibe:diamond_ring",               "techreborn:quantum_solar_panel"],
-    ["minecraft:elytra",               "iron-jetpacks:netherite_jetpack", "minecraft:elytra"],
+    ["minecraft:elytra",               "kibe:diamond_ring",               "minecraft:elytra"],
+    ["techreborn:quantum_solar_panel", "iron-jetpacks:netherite_jetpack", "techreborn:quantum_solar_panel"],
   ]);
 
   // Boosters
@@ -26,6 +26,20 @@ events.listen("recipes", function (event) {
     ["minecraft:firework_rocket",      "blockus:legacy_nether_reactor_core", "minecraft:firework_rocket"],
     ["techreborn:tungstensteel_plate", "techreborn:mixed_metal_ingot",     "techreborn:tungstensteel_plate"],
   ]);
+
+  // Altar
+  event.shaped(item.of("astromine:altar"), [
+    ["techreborn:tungstensteel_storage_block", "techreborn:tungstensteel_storage_block", "techreborn:tungstensteel_storage_block"],
+    ["astromine:galaxium_block",               "techreborn:lead_storage_block",          "astromine:galaxium_block"],
+    ["techreborn:tungstensteel_storage_block", "techreborn:tungstensteel_storage_block", "techreborn:tungstensteel_storage_block"],
+  ]);
+
+   // Altar Pedestal
+   event.shaped(item.of("astromine:altar_pedestal"), [
+     ["techreborn:tungstensteel_plate", "techreborn:tungstensteel_plate", "techreborn:tungstensteel_plate"],
+     ["astromine:galaxium",             "techreborn:lead_plate",          "astromine:galaxium"],
+     ["techreborn:tungstensteel_plate", "techreborn:tungstensteel_plate", "techreborn:tungstensteel_plate"],
+   ]);
 
   // Solar Panels
   event.remove({ id: "techreborn:crafting_table/solar_panel/ultimate_solar_panel_alt" });
