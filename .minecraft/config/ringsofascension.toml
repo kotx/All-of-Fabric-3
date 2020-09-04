@@ -11,7 +11,7 @@
 	ringMagnetism = true
 	ringSponge = true
 	ringNightVision = true
-	ringRegeneration = true
+	ringRegeneration = false
 	ringPoisonResistance = true
 	ringStrength = true
 	ringGrowth = true
@@ -74,9 +74,9 @@
 	["Rings Tier".Tiers]
 		ringTierWaterBreathing = 2
 		ringTierKnockbackResistance = 1
-		ringTierNightVision = 1
+		ringTierNightVision = 0
 		ringTierPoisonResistance = 2
-		ringTierSlowFalling = 0
+		ringTierSlowFalling = 1
 		ringTierMagnetism = 1
 		ringTierSponge = 2
 		ringTierSpeed = 1
@@ -87,7 +87,7 @@
 		ringTierDolphin = 1
 		ringTierWaterWalking = 2
 		ringTierInvisibility = 3
-		ringTierGrowth = 2
+		ringTierGrowth = 1
 		ringTierMining = 2
 		ringTierUndying = 3
 		ringTierFireResistance = 2
@@ -116,7 +116,7 @@
 	#Generate rings in village armorer chests
 	ringArmorerChests = true
 	#Generate rings in abandoned mineshaft chests
-	ringMineshaftChests = true
+	ringMineshaftChests = false
 	#Generate rings in desert pyramid chests
 	ringPyramidChests = true
 	#Generate rings in end city chests
@@ -124,15 +124,15 @@
 	#Generate rings in stronghold library chests
 	ringStrongholdChests = true
 	#Generate rings in village weaponsmith chests
-	ringWeaponsmithChests = true
+	ringWeaponsmithChests = false
 	#Generate rings in buried treasure chests
-	ringBuriedTreasureChests = true
+	ringBuriedTreasureChests = false
 	#Generate rings in igloo chests
 	ringIglooChests = true
 	#Generate rings in nether bridge chests
 	ringNetherChests = true
 	#Generate rings in spawn bonus chests
-	ringBonusChests = true
+	ringBonusChests = false
 	#Generate rings in shipwreck treasure chests
 	ringShipwreckChests = false
 	#Generate rings in jungle temple chests

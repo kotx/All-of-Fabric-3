@@ -1,5 +1,5 @@
 {
-  "configVersion": "0.2.1",
+  "configVersion": "0.3.0",
   "guessCaveBiomeIfAbsent": true,
   "generateOreCaves": true,
   "whitelistedDimensions": [
