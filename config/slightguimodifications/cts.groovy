@@ -110,26 +110,4 @@ mainMenu {
         text = translatable("menu.options")
         onClicked = options()
     }
-    button {
-        position {
-            x { it / 2 + 3 }
-            y = 179
-        }
-        width = 100
-        height = 20
-
-        text = literal("Rent A Server")
-        onClicked = url("https://www.bisecthosting.com/AK9")
-    }
-    button {
-        position {
-            x { it / 2 - 101 }
-            y = 179
-        }
-        width = 100
-        height = 20
-
-        text = literal("Discord")
-        onClicked = url("https://discord.gg/6rkdm48")
-    }
 }
